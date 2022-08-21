@@ -1,0 +1,343 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* mobile first */
+.contBody{
+    display: grid;
+    grid-template-areas: "headerGrid"
+                         "mainGrid"
+                         "footerGrid";
+    align-items: center;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header{
+    background: rgb(71, 71, 71);
+    background: radial-gradient(left, rgba(249,249,249,0.18249298010219717) 11%, rgb(50, 107, 50) 82%);
+}
+
+
+
+header h1{
+    padding: 15px 2px;
+    
+}
+
+
+
+header h1 a:hover{
+    color:rgb(68, 206, 34);
+    font-weight: bolder;
+} a{ 
+    text-decoration: none;
+    color: #3f8f35;
+    font-size: 1.9em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headerGrid{
+    grid-area: headerGrid;
+
+}
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f3f7f2;
+    padding: 5px 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* main */
+main{
+    background: rgb(10, 10, 10);
+    background: radial-gradient(left, rgba(124, 122, 122, 0.182) 1%, rgb(0, 0, 0) 95%);
+}
+
+.mainGrid{
+    grid-area: mainGrid;
+}
+
+main h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #299f11;
+}
+
+.casaDecoration {
+    font-size: 20px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.casaDecorationText{
+    padding: 13px;
+    color: #ffffff;
+
+}
+
+.oficinasForm{
+    margin:  9px;
+    color: #ffffff;
+}
+
+.oficinasMap{
+    margin: 9px;
+    color: #ffffff;
+}
+
+.nosotrosTitulo{
+    text-align: center;
+}
+
+.whatsapp {
+    color: #3f8f35;
+    font-size: 100px;
+}
+
+
+/* footer */
+.footerGrid{
+    color: #3f8f35;
+    font-size: small;
+    grid-area: footerGrid;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    color: #ffffff;
+
+}
+
+/* media querie tablet */
+@media only screen and (min-width: 600px){
+    .contBody{
+        display: grid;
+        grid-template-areas: "headerGrid headerGrid"
+                             "mainGrid mainGrid"
+                             "footerGrid footerGrid";
+    }
+
+    .contBodyNosotros{
+        display: grid;
+        grid-template-areas: "headerGrid"
+                             "mainGridNosotros"
+                             "footerGrid";
+    }
+    
+
+
+    /* header */
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header h1 a{
+
+        font-size: 1em;
+    
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    nav a{
+        font-size: 15px;
+    }
+
+    /* main */
+    .mainGrid{
+       color: #f3f7f2;
+        display: grid;
+        grid-template-areas: "h2 h2"
+                             "casa1 casa1Img"
+                             "casa1Text casa1Img"
+                             "casa2Img casa2"
+                             "casa2Img casa2Text";
+    }
+    
+    
+    h2{
+        padding-bottom: 30px;
+    }
+
+    .h2{
+        grid-area: h2;
+    }
+
+    .casa1{
+        grid-area: casa1;
+    }
+    
+    p .casa1{
+        display: flex;
+    }
+
+    .casaDecoration{
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .casaDecorationImg{
+        height: 300px;
+        padding: 9px;
+        margin-left: 20px;
+        display: flex;
+        justify-content:center;
+        
+    }
+
+    .casa1Img{
+        grid-area: casa1Img;
+        
+    }
+
+    .casa1Text{
+        grid-area: casa1Text;
+    }
+
+    .casa2{
+        grid-area: casa2;
+    }
+
+    .casa2Img{
+        grid-area: casa2Img;
+    }
+
+    .casa2Text{
+        grid-area: casa2Text;
+    }
+
+    .comienzo{
+        grid-area: comienzo;
+    }
+
+    .objetivo{
+        grid-area: objetivo;
+    }
+
+    .nosotrosComienzo{
+        color: #f3f7f2;
+        
+    }
+    
+    .nosotrosComienzoText{
+        color: #f3f7f2;
+        
+    }
+    
+    .nosotrosObjetivo{
+        color: #f3f7f2;
+        
+    }
+    
+    .nosotrosObjetivoText{
+        color: #f3f7f2;
+    }
+    
+    .formulario{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        color: #ffffff;
+    
+    }
+}
+
+
+/* media querie desktop */
+@media only screen and (min-width: 1024px){
+    /* header */
+    header h1 a{
+        font-size: 50px;
+    }
+
+    ul li a{
+        font-size: 25px;
+    }
+
+
+    /* main */
+    .h2{
+        font-size: 40px;
+    }
+    
+    .casaDecoration{
+        font-size: 30px;
+    }
+    
+    .casaDecorationText{
+        font-size: 20px;
+    }
+
+
+    .formulario{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        color: #ffffff;
+    
+    }
+}
+
+
+
