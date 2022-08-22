@@ -20,8 +20,8 @@ body{
 
 /* header */
 header{
-    background: rgb(71, 71, 71);
-    background: radial-gradient(left, rgba(249,249,249,0.18249298010219717) 11%, rgb(50, 107, 50) 82%);
+    background: linear-gradient(to right, #414141 0%, #000000 100%); 
+    
 }
 
 
@@ -339,6 +339,6 @@ img{
     
     }
 }
-
-
-
+.card text-center {
+    background-color: #000000;
+}
