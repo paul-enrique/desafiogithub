@@ -76,7 +76,7 @@ nav a{
 
 /* main */
 main{
-    background: rgb(10, 10, 10);
+    background: linear-gradient(to right, #000000 0%, #166d3b 100%); 
     background: radial-gradient(left, rgba(124, 122, 122, 0.182) 1%, rgb(0, 0, 0) 95%);
 }
 
